@@ -1,7 +1,7 @@
 {
   "title": "UAParser.js",
   "name": "@amplitude/ua-parser-js",
-  "version": "0.7.25",
+  "version": "0.7.25-ENUM-PATCH",
   "author": "Faisal Salman <f@faisalman.com> (http://faisalman.com)",
   "description": "Detect Browser, Engine, OS, CPU, and Device type/model from User-Agent data. Supports browser & node.js environment",
   "keywords": [
@@ -169,7 +169,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/amplitude/ua-parser-js.git"
+    "url": "https://github.com/chrskrchr/ua-parser-js.git"
   },
   "license": "MIT",
   "engines": {

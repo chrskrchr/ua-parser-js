@@ -3,7 +3,7 @@
    Copyright © 2012-2021 Faisal Salman <f@faisalman.com>
    MIT License *//*
    Detect Browser, Engine, OS, CPU, and Device type/model from User-Agent data.
-   Supports browser & node.js environment. 
+   Supports browser & node.js environment.
    Demo   : https://faisalman.github.io/ua-parser-js
    Source : https://github.com/faisalman/ua-parser-js */
 /////////////////////////////////////////////////////////////////////////////////
@@ -75,7 +75,9 @@
         },
         enumerize = function (arr) {
             var enums = {};
-            for (var i in arr) {
+            // temporary workaround for the issue described here: https://github.com/amplitude/Amplitude-JavaScript/issues/435
+            // for (var i in arr) {
+            for (var i = 0; i < arr.length; i++) {
                 enums[arr[i].toUpperCase()] = arr[i];
             }
             return enums;
